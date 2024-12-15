@@ -30,5 +30,5 @@ I'm a  Lahiru DevOps Engineer in Srilanka !
 ## Next Update
 - Update port customization features to allow greater flexibility.
 
-- Add support for multiple Linux distributions and ensure grammatical accuracy across documentation.
+- Add support for multiple Linux distributions 
 
