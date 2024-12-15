@@ -24,7 +24,7 @@ chmod +x install.sh
 ```
     
 ## 🚀 About Me
-I'm a  Lahiru DevOps Engineer in Srilanka !
+I am Lahiru, a DevOps Engineer from Sri Lanka.
 
 
 ## Next Update
