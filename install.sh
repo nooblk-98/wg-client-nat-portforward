@@ -65,20 +65,7 @@ services:
     sysctls:
       - net.ipv4.ip_forward=1
       - net.ipv4.conf.all.src_valid_mark=1
-    ports:
-      - "51820:51820/udp"
-      - "51821:51821/tcp"
-      - "5500:5500/tcp"
-      - "5050:5050/tcp"
-      - "5051:5051/tcp"
-      - "5052:5052/tcp"
-      - "5053:5053/tcp"
-      - "5054:5054/tcp"
-      - "5055:5055/tcp"
-      - "6666:6666/tcp"
-      - "7777:7777/tcp"
-      - "8888:8888/tcp"
-      - "9090:9090/tcp"
+    network_mode: "host"
 EOF
 
 # Restrict permissions
