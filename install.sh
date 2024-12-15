@@ -104,4 +104,5 @@ echo_with_animation "All port forwarding rules have been added inside the contai
 
 # Final message
 echo_with_animation "Installation, setup, and port forwarding complete! WireGuard is up and running."
-echo "Access it via your browser at http://$WG_HOST:5500"
+echo "Access it via your browser at http://$WG_HOST:51821"
+echo "Please Create Only one user"
