@@ -109,6 +109,11 @@ for PORT in "${PORTS[@]}"; do
     echo "Forwarding port $PORT..."
     docker exec -it $CONTAINER_NAME iptables -t nat -A PREROUTING -i $EXT_IFACE -p tcp --dport $PORT -j DNAT --to-destination $VPN_CLIENT_IP:$PORT
     docker exec -it $CONTAINER_NAME iptables -A FORWARD -p tcp -d $VPN_CLIENT_IP --dport $PORT -j ACCEPT
+
+
+    echo "Forwarding UDP port $PORT..."
+    docker exec -it $CONTAINER_NAME iptables -t nat -A PREROUTING -i $EXT_IFACE -p udp --dport $PORT -j DNAT --to-destination $VPN_CLIENT_IP:$PORT
+    docker exec -it $CONTAINER_NAME iptables -A FORWARD -p udp -d $VPN_CLIENT_IP --dport $PORT -j ACCEPT    
 done
 
 echo "All rules added inside the container!"
