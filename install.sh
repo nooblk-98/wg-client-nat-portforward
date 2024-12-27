@@ -102,7 +102,7 @@ EXT_IFACE="eth0"
 VPN_CLIENT_IP="10.8.0.2"
 
 # List of ports to forward
-PORTS=(5050 5051 5052 5053 5054 5055 6666 7777 8888 9090)
+PORTS=(5050 5051 5052 5053 5054 5055 6666 7777 8888 9090 25565)
 
 # Loop through each port and add iptables rules inside the container
 for PORT in "${PORTS[@]}"; do
