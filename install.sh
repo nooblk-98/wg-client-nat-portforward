@@ -79,6 +79,8 @@ services:
       - "7777:7777/tcp"
       - "8888:8888/tcp"
       - "9090:9090/tcp"
+      - "25565:25565/udp"
+      - "25565:25565/tcp"
 EOF
 
 # Restrict permissions
