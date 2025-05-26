@@ -42,7 +42,7 @@ These include common game and app ports. You can change them by editing the `POR
 ## 📜 Installation
 
 ```bash
-wget https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/wireguard-port-forward-client-script/main/install.sh
+wget https://raw.githubusercontent.com/nooblk-98/wg-client-nat-portforward/main/install.sh
 chmod +x install.sh
 sudo ./install.sh
 ````
