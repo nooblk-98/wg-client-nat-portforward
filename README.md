@@ -31,13 +31,13 @@ This script sets up a full-featured WireGuard VPN server using Docker and [`wg-e
 
 The following ports are forwarded to the VPN client IP `10.8.0.2`:
 
+```bash
 5050, 5051, 5052, 5053, 5054, 5055, 6666, 7777, 8888, 9090, 25565
 
 ````
 
 These include common game and app ports. You can change them by editing the `PORTS` array inside the script.
 
----
 
 ## 📜 Installation
 
